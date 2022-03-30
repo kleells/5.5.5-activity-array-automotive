@@ -2,7 +2,7 @@
 const VehicleModule = require("./vehicle")
 
 class Car extends VehicleModule {
-    constructor (make, model, year, color, mileage)
+    constructor (make, model, year, color, mileage) {
     super (make, model, year, color, mileage)
     this.maximumPassengers = 5
     this.passenger = 0
@@ -37,4 +37,4 @@ scheduleService(mileage) {
 //this shows how to call from this module...
 let newCar1 = new Car("Mecury", "Sedan", "1965", "red", 120000);
 
-
+console.log(myCar)
